@@ -42,10 +42,16 @@ export default function BlogPage() {
     }
   };
 
-  const filteredArticles = articles.filter((article) =>
-    article.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-    article.excerpt.toLowerCase().includes(searchQuery.toLowerCase())
-  );
+  const filteredArticles = articles.filter((article) => {
+    const query = searchQuery.toLowerCase().trim();
+    if (!query) return true;
+    return (
+      article.title.toLowerCase().includes(query) ||
+      article.excerpt.toLowerCase().includes(query) ||
+      article.category.toLowerCase().includes(query) ||
+      article.content.toLowerCase().includes(query)
+    );
+  });
 
   return (
     <div data-testid="blog-page" className="min-h-screen pt-20">
