@@ -18,7 +18,7 @@ import { Footer } from "@/components/Footer";
 function App() {
   return (
     <div className="App min-h-screen flex flex-col">
-      <BrowserRouter>
+      <HashRouter>
         <Navbar />
         <main className="flex-1">
           <Routes>
@@ -32,7 +32,7 @@ function App() {
           </Routes>
         </main>
         <Footer />
-      </BrowserRouter>
+      </HashRouter>
       <Toaster position="top-right" />
     </div>
   );
