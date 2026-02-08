@@ -55,10 +55,9 @@
     "tailwindcss-animate": "^1.0.7",
     "vaul": "^1.1.2",
     "zod": "^3.24.4"
-  },
- "scripts": {
+"scripts": {
   "start": "craco start",
-  "build": "BUILD_PATH=dist craco build && cp public/_redirects dist/_redirects",
+  "build": "craco build",
   "test": "craco test"
 }
 
