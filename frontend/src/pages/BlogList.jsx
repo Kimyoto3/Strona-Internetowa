@@ -9,7 +9,7 @@ console.log("BLOGS:", blogs);
 
 
 
-export default function BlogPage() {
+export default function BlogList() {
   const [articles] = useState(blogs);
   const [categories, setCategories] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState(null);
