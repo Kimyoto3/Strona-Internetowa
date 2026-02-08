@@ -1,47 +1,25 @@
+import { blogs } from "@/data/blogs";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { Search, Clock, ArrowRight, BookOpen } from "lucide-react";
-import axios from "axios";
 
-const API = `${process.env.REACT_APP_BACKEND_URL}/api`;
+
 
 export default function BlogPage() {
-  const [articles, setArticles] = useState([]);
+  const [articles] = useState(blogs);
   const [categories, setCategories] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [searchQuery, setSearchQuery] = useState("");
-  const [loading, setLoading] = useState(true);
+  const [loading] = useState(false);
 
-  useEffect(() => {
-    fetchArticles();
-    fetchCategories();
-  }, [selectedCategory]);
+  
 
-  const fetchArticles = async () => {
-    try {
-      setLoading(true);
-      const params = selectedCategory ? { category: selectedCategory } : {};
-      const response = await axios.get(`${API}/blog/articles`, { params });
-      setArticles(response.data);
-    } catch (error) {
-      console.error("Error fetching articles:", error);
-    } finally {
-      setLoading(false);
-    }
-  };
+  
 
-  const fetchCategories = async () => {
-    try {
-      const response = await axios.get(`${API}/blog/categories`);
-      setCategories(response.data.categories);
-    } catch (error) {
-      console.error("Error fetching categories:", error);
-    }
-  };
-
+ 
   const filteredArticles = articles.filter((article) => {
     const query = searchQuery.toLowerCase().trim();
     if (!query) return true;
