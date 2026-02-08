@@ -4,52 +4,64 @@ export const blogs = [
     slug: "podstawy-inwestowania-dla-poczatkujacych",
     title: "Podstawy inwestowania dla początkujących",
     excerpt:
-      "Jak zacząć inwestować mądrze, bezpiecznie i bez kosztownych błędów? Ten przewodnik to solidna baza oparta na danych i doświadczeniu rynkowym.",
-    category: "Podstawy inwestowania",
-    read_time: 9,
-    image_url:
-      "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3",
+      "Poznaj fundamentalne zasady inwestowania i dowiedz się, jak zacząć budować majątek krok po kroku.",
     content: `
-## Dlaczego inwestowanie to dziś konieczność, a nie luksus?
+Inwestowanie to proces systematycznego lokowania kapitału w celu jego pomnażania w długim terminie.
+Badania pokazują, że osoby inwestujące regularnie, nawet niewielkie kwoty, osiągają znacznie lepsze
+rezultaty niż osoby trzymające środki wyłącznie na kontach oszczędnościowych.
 
-Inflacja w Polsce w latach 2021–2023 przekraczała momentami **18% (GUS)**. 
-Oznacza to jedno: **pieniądz trzymany wyłącznie na koncie traci realną wartość**.
+Według danych Credit Suisse Global Wealth Report, ponad 60% globalnego majątku zostało zbudowane
+dzięki długoterminowym inwestycjom, a nie jednorazowym spekulacjom.
 
-Według badań **Credit Suisse Global Wealth Report**, osoby inwestujące regularnie
-budują majątek średnio **3–4 razy szybciej** niż osoby oszczędzające pasywnie.
-
-## Najczęstsze błędy początkujących inwestorów
-
-1. Inwestowanie bez planu
-2. Kierowanie się emocjami
-3. Brak dywersyfikacji
-4. Próba „trafienia idealnego momentu”
-
-Badania **DALBAR Quantitative Analysis of Investor Behavior** pokazują, że
-przeciętny inwestor osiąga **o 4–6 pp. niższe stopy zwrotu** niż rynek – właśnie przez emocje.
-
-## W co inwestować na start?
-
-- ETF-y globalne (MSCI World, ACWI)
-- Obligacje indeksowane inflacją
-- Fundusze zrównoważone
-- Proste portfele pasywne
-
-> Warren Buffett: *„Ryzyko bierze się z niewiedzy.”*
-
-## Case study: prosty portfel 60/40
-
-Portfel:
-- 60% globalne akcje
-- 40% obligacje
-
-Historyczna średnia stopa zwrotu (1970–2022): **~7% realnie rocznie**  
-Źródło: Vanguard, Morningstar
-
-## Podsumowanie
-
-Inwestowanie to proces, nie jednorazowa decyzja. 
-Największą przewagą inwestora indywidualnego jest **czas, konsekwencja i chłodna głowa**.
+Kluczowe zasady inwestowania:
+- dywersyfikacja portfela
+- długi horyzont czasowy
+- kontrola emocji
+- regularność wpłat
 `,
+    category: "Podstawy inwestowania",
+    read_time: 8,
+    image_url:
+      "https://images.unsplash.com/photo-1642790106117-e829e14a795f",
+  },
+
+  {
+    id: 2,
+    slug: "planowanie-finansowe-na-emeryture",
+    title: "Planowanie finansowe na emeryturę",
+    excerpt:
+      "Dlaczego planowanie emerytury warto zacząć jak najwcześniej i jak robią to profesjonaliści.",
+    content: `
+Raport OECD jasno pokazuje, że systemy emerytalne w Europie nie gwarantują utrzymania dotychczasowego
+standardu życia po zakończeniu aktywności zawodowej.
+
+Eksperci wskazują, że optymalnym celem jest zgromadzenie kapitału pozwalającego na pokrycie
+70–80% dotychczasowych wydatków.
+
+Im wcześniej rozpoczniesz planowanie, tym mniejszy miesięczny wysiłek finansowy jest potrzebny.
+`,
+    category: "Planowanie finansowe",
+    read_time: 10,
+    image_url:
+      "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c",
+  },
+
+  {
+    id: 3,
+    slug: "jak-budowac-majatek-dlugoterminowo",
+    title: "Jak budować majątek długoterminowo",
+    excerpt:
+      "Sprawdzone strategie budowania majątku w perspektywie 20–30 lat.",
+    content: `
+Najbogatsi inwestorzy świata, tacy jak Warren Buffett, budowali swoje fortuny
+dzięki cierpliwości i konsekwencji.
+
+Statystyki pokazują, że największym wrogiem inwestora nie są rynki, lecz własne decyzje
+podejmowane pod wpływem emocji.
+`,
+    category: "Budowanie majątku",
+    read_time: 7,
+    image_url:
+      "https://images.unsplash.com/photo-1580519542036-c47de6196ba5",
   },
 ];
