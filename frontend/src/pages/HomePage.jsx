@@ -11,7 +11,7 @@ export default function HomePage() {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `url('https://customer-assets.emergentagent.com/job_invest-wisely-20/artifacts/zlto6h57_Opole%20rynek%20z%20lotu%20ptaka.jpg')`
+            backgroundImage: `url('/opole-hero.webp')`
           }}
         >
           <div className="hero-overlay absolute inset-0" />
@@ -247,7 +247,7 @@ export default function HomePage() {
             <div className="relative">
               <div className="aspect-[4/5] bg-slate-200 rounded-sm overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1565688527174-775059ac429c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTJ8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBmaW5hbmNpYWwlMjBhZHZpc29yJTIwbWVldGluZyUyMG9mZmljZXxlbnwwfHx8fDE3NzAyMjE0NzZ8MA&ixlib=rb-4.1.0&q=85"
+                  src="/jan-domanski-szklane-tlo.jpg"
                   alt="Profesjonalne spotkanie"
                   className="w-full h-full object-cover"
                 />
