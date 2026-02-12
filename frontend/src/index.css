@@ -268,7 +268,7 @@ html {
     --radius: 0.25rem;
   }
 }
-
+/*
 @layer base {
   * {
     @apply border-border;
@@ -277,9 +277,4 @@ html {
     @apply bg-background text-foreground;
   }
 }
-
-@layer base {
-  [data-debug-wrapper="true"] {
-    display: contents !important;
-  }
-}
+*/
